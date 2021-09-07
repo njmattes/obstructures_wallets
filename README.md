@@ -1,12 +1,14 @@
 # Obstructures numeric wallet model
 
-This model attempot sto optimize the placement of the bands in the new A4
+This model attempts to optimize the placement of the bands in the new A4
 wallet. It relates the position of the lower band (not the new -120 band)
 to both ‘security’ and ‘ease of operation’.
 
-The Equations
+## The Equations
 
-Security as modelled as a ‘risk factor’ between 0 and 1 based on the lateral
+### Security
+
+Security is modelled as a ‘risk factor’ between 0 and 1 based on the lateral
 position of a card beneath the bands.
 
 ![Graph of security function](./obstructures_wallets/images/security.svg)
@@ -38,7 +40,7 @@ increases more rapidly over time. I’m assuming a very basic exponential
 decay function, and the realities are likely much more complex. But these
 are the limits of modelling. Or at least the limits of my skill.
 
-Ease.
+### Ease.
 
 We assume that a basic sigmoid curve describes the relationship of strain
 and stress of the o-rings (which is common amongst rubber compounds). We
@@ -56,7 +58,7 @@ moving the lower band closer to the wallet’s edge (“Food-eater!”). Then
 translates this value to the sigmoid curve. Obviously the less the stretch,
 the lower the value of the curve.
 
-The objective.
+### The objective.
 
 The graphs of each of these variable is translated onto a 1 by 1 graph,
 and the area underneath the curve is calculated. In other words, maximum
