@@ -39,7 +39,7 @@ def security(a=.6, b=.5, c=1.55, d=2.55, r=.5):
     ax = df.plot(figsize=(8,4))
     fig = ax.get_figure()
     fig.tight_layout()
-    fig.savefig('./figure.svg')
+    fig.savefig('./security.svg')
     df = pd.DataFrame(ya, index=xs/np.max(xs))
     ax = df.plot(kind='area', figsize=(4,4), color='black')
     fig = ax.get_figure()
