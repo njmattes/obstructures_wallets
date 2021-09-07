@@ -10,7 +10,6 @@ Security as modelled as a ‘risk factor’ between 0 and 1 based on the lateral
 position of a card beneath the bands.
 
 ![Graph of security function](./obstructures_wallets/images/security.svg)
-<img src="./obstructures_wallets/images/security.svg">
 
 When squarely situated on the wallet, this security factor = 1. When
 underneath no bands, it equals 0. Along the x-axis, 0 represents the bottom
@@ -47,7 +46,6 @@ assume it runs from 0% stretch to 600% stretch, the hypothetical point
 of failure based on datasheets from the manufacturer of our compound.
 
 ![Graph of elasticity function](./obstructures_wallets/images/elasticity.svg)
-<img src="./obstructures_wallets/images/elasticity.svg">
 
 Like security, the ‘rate’ of this curve (e) is unknown and varies in the
 model. Changing it can cause the curve to be flatter at the ends and steeper
@@ -66,9 +64,7 @@ security would fill the graph and its area would equal 1. Maximum ease
 would also equal 1.
 
 ![Area of security](./obstructures_wallets/images/security_area.svg)
-<img src="./obstructures_wallets/images/security_area.svg">
 ![Area of elasticity](./obstructures_wallets/images/elasticity_area.svg)
-<img src="./obstructures_wallets/images/elasticity_area.svg">
 
 Currently the objective function weights these values to prefer security
 over ease. The value of the weighting constant also varies and can be
